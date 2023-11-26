@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Power Pass</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+	<link rel="stylesheet" href="./assets/style/style.css" />
+</head>
+
+<body>
+	<header class="container-fluid" style="border: 1px solid red;">
+		<nav class="navbar navbar-expand-md p-0 py-3">
+			<div class="container d-flex justify-content-between p-0">
+				<a href="index.html" class="navbar-brand pe-3">
+					<img src="assets/images/logo.svg" width="220" alt="ai web builder" />
+
+				</a>
+				<button class="navbar-toggler border-0 ourline-0" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse d-md-flex justify-content-end" id="navbarSupportedContent">
+					<ul class="navbar-nav  fw-bold p-0 m-0">
+						<li class="nav-item p-0 m-0 py-1 py-md-0 px-md-3 px-xl-3">
+							<a class="nav-link blue-text fw-light p-0 m-0 " aria-current="page"
+								href="index.html">Preise</a>
+						</li>
+						<li class="nav-item p-0 m-0 py-1 py-md-0 px-md-3 px-xl-3">
+							<a class="nav-link p-0 m-0 blue-text fw-light" href="#">Häufige Fragen</a>
+						</li>
+						<li class="nav-item p-0 m-0 py-1 py-md-0 px-md-3 px-xl-3">
+							<a class="nav-link p-0 m-0 blue-text fw-light"
+								href="#">Über uns</a>
+						</li>
+						<li class="nav-item p-0 m-0 py-1 py-md-0 px-md-3 px-xl-3 me-3">
+							<a class="nav-link p-0 m-0 blue-text fw-light" href="#">Kontakt</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav profile-menu">
+						<button class=" px-4 py-2 my-2 my-md-0">Anmelden</button>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main style="border: 1px solid red;" class="container-fluid g-0">
+		
+		<section class="container">
+			<div class="col-md-6">
+				<form class="form-main ps-4 pe-4 pe-lg-5 ps-lg-5 pt-4 pt-lg-5 pb-4 position-relative" id="contactForm">
+				   <div class="mb-3">
+					  <label class="form-label blue-text w-100">Anzahl der Wohnungen im Gebäude <i class="blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
+					  <input type="text" class="form-control" required name="name">
+				   </div>
+				   <div class="mb-3">
+					<label class="form-label blue-text w-100">Anzahl der Wohnungen im Gebäude <i class="blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
+					  <input type="text" class="form-control" required name="phone">
+				   </div>
+				   <div class="mb-3">
+					<label class="form-label blue-text w-100">Anzahl der Wohnungen im Gebäude <i class="blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
+					  <input type="text" class="form-control" required name="email">
+				   </div>
+				   <div class="mb-3">
+					  <label class="form-label text-main">Messages</label>
+					  <textarea class="form-control" required name="message" placeholder="Please Write a Message"></textarea>
+				   </div>
+					
+					<p class="text-green" id="formMessage"></p>
+				   <input type="submit" value="Send Message" class="text-light w-100 border-0 py-2 mt-3">
+				</form>
+			 </div>
+		</section>
+		
+	</main>
+	<footer class="footer py-5">
+		<div class="container py-2">
+<div class="row">
+<div class="col-6">
+	<a href="index.html" class="">
+		<img src="assets/images/logo.svg" width="240" alt="ai web builder" />
+	</a>
+</div>
+<div class="col-6">
+	<div class="d-flex justify-content-end">
+		<div class="">
+    <img class="pe-2" width="80" src="assets/images/paypal.png" alt="">
+	<img class="pe-2" width="50" src="assets/images/visa.png" alt="">
+	<img class="pe-2" width="40" src="assets/images/master.png" alt="">
+	<img class="pe-2" width="40" src="assets/images/sepa.png" alt="">
+</div>
+</div>
+</div>
+</div>
+
+<div class="row pt-5 mt-5">
+	<div class="col-6">
+		<p class="blue-text m-0">© 2023 POWER<strong>PASS</strong>, alle Rechte vorbehalten </p>
+	</div>
+	<div class="col-6">
+		<div class="d-flex justify-content-end">
+			<div class="">
+				<a class="blue-text" href="">Impressum</a>
+				<span class="blue-text">|</span>
+				<a class="blue-text" href="">AGB</a>
+				<span class="blue-text">|</span>
+				<a class="blue-text" href="">Datenschutz</a>
+
+		
+	</div>
+	</div>
+	</div>
+	</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+		crossorigin="anonymous"></script>
+
+	<script>
+		
+	</script>
+</body>
+
+</html>
