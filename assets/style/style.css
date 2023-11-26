@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;600&family=Poppins&display=swap');
+
+:root {
+	--dark--: #111827;
+	--primary--: #005376;
+	--green--: #95c11f;
+	--secondary--: #6b7280;
+
+	/* font-family */
+	--dm-sans--: 'DM Sans', sans-serif;
+	--inter--: 'Inter', sans-serif;
+	--poppins--: 'Poppins', sans-serif;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	font-size: 16px;
+}
+
+body {
+	font-family: var(--dm-sans--);
+}
+
+.profile-menu .dropdown-menu {
+	right: 0;
+	left: unset;
+}
+
+.profile-menu .fa-fw {
+	margin-right: 10px;
+}
+
+.toggle-change::after {
+	border-top: 0;
+	border-bottom: 0.3em solid;
+}
+
+.dark-text {
+	color: var(--dark--);
+}
+
+.blue-text {
+	color: var(--primary--);
+}
+
+.yellowish-green {
+	color: var(--green--);
+}
+
+.nav-logo {
+	color: var(--primary--);
+	font-size: 2rem;
+}
+
+.navbar-brand {
+	font-family: var(--poppins--);
+	font-size: 2rem;
+}
+
+
+
+.nav-item>.active {
+	color: var(--primary--) !important;
+}
+
+.nav-link:hover {
+	color: var(--primary--) !important;
+}
+
+button {
+	background-color: var(--primary--);
+	border: 0px solid var(--primary--);
+	color: white;
+	font-family: var(--dm-sans--);
+	font-weight: bold;
+}
+
+.secondary-text {
+	color: var(--secondary--) !important;
+}
+
+.image-container {
+	position: relative;
+}
+
+.text-on-image {
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	color: white;
+	/* Set text color */
+	font-size: 24px;
+	/* Set text size */
+}
+
+.pricing-card {
+
+	border: 1px solid #fff;
+	/* White border */
+	background-color: #001f3f;
+	/* Dark blue background color */
+	color: #fff;
+	/* Text color */
+
+	border-radius: 0px;
+	/* Rounded corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	/* Optional: Add a subtle box shadow */
+}
+
+
+/* more info hover descripton */
+.card-container {
+	position: relative;
+	/* display: inline-block; */
+}
+
+.button {
+	background-color: #001f3f;
+	/* Dark blue button color */
+	color: #fff;
+	/* Text color */
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+.hover-card {
+	display: none;
+	position: absolute;
+	top: -210px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 360px;
+	border: 1px solid #fff;
+	/* White border */
+	/* Dark blue background color */
+	background-color: white;
+	padding: 20px;
+	;
+	/* Optional: Adds rounded corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	/* Optional: Adds a subtle box shadow */
+}
+
+.hover-card .list-items {
+	list-style: none;
+	/* Remove default list styles (bullets/dots) */
+	padding: 0;
+	/* Remove default padding for the list */
+}
+
+.hover-card .list-items li {
+	position: relative;
+	padding-left: 24px;
+	/* Adjust the padding to accommodate the icon */
+	line-height: 1.5;
+}
+
+.hover-card .list-items li::before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f058";
+	/* Unicode character for a bullet point (you can replace it with your preferred icon) */
+
+	margin-right: 8px;
+	/* Adjust the spacing between the icon and the text */
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+
+.hover-card:after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	border-width: 10px;
+	margin-left: -10px;
+	border-top-color: white;
+	/* Dark blue background color of the card */
+}
+
+.card-container:hover .hover-card {
+	display: block;
+}
+
+
+/* faq */
+.faq {
+	display: flex;
+	
+	flex-direction: column;
+	width: 100%;
+}
+
+.faq-item {
+	border-bottom: 1px solid var(--primary--);
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+	
+}
+
+.faq-header {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.icon {
+	
+	margin-right: 10px;
+	transition: transform 0.3s ease-out;
+}
+
+.faq-content {
+	padding: 10px;
+	display: none;
+	overflow: hidden;
+}
+
+.faq-item.open .faq-content {
+	display: block;
+}
+
+.team-section .right-side{
+background-color: var(--green--);
+position: relative;
+}
+
+.team-section .right-side .overlay {
+	position: absolute;
+	top: 42%;
+	left: 0%;
+	
+	width: 64%;
+	height: 58%;
+	background-color: white;
+	opacity: 1; /* Adjust the opacity as needed */
+  }
+
