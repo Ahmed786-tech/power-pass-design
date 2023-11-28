@@ -22,6 +22,14 @@ body {
 	font-family: var(--dm-sans--);
 }
 
+.small-text{
+font-size: 14px;
+}
+
+.extra-small-text{
+	font-size: 12px;
+	}
+
 .profile-menu .dropdown-menu {
 	right: 0;
 	left: unset;
@@ -46,6 +54,10 @@ body {
 
 .yellowish-green {
 	color: var(--green--);
+}
+
+.bg-yellowish-green {
+	background-color: var(--green--);
 }
 
 .nav-logo {
@@ -86,12 +98,12 @@ button {
 
 .text-on-image {
 	position: absolute;
-	top: 50%;
-	left: 45%;
+	top: 45%;
+	left: 50%;
 	transform: translate(-50%, -50%);
 	color: white;
 	/* Set text color */
-	font-size: 24px;
+	/* font-size: 24px; */
 	/* Set text size */
 }
 
@@ -130,41 +142,50 @@ button {
 .hover-card {
 	display: none;
 	position: absolute;
-	top: -210px;
+	top: -190px;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 360px;
+	width: 300px;
 	border: 1px solid #fff;
 	/* White border */
 	/* Dark blue background color */
 	background-color: white;
 	padding: 20px;
-	;
+	padding-bottom: 10px;
 	/* Optional: Adds rounded corners */
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	opacity: 1;
 	/* Optional: Adds a subtle box shadow */
 }
 
 .hover-card .list-items {
 	list-style: none;
 	/* Remove default list styles (bullets/dots) */
-	padding: 0;
+	
 	/* Remove default padding for the list */
 }
 
 .hover-card .list-items li {
+	display: flex;
+  flex-direction: column;
+ 
+  justify-content: center;
 	position: relative;
-	padding-left: 24px;
-	/* Adjust the padding to accommodate the icon */
-	line-height: 1.5;
+	padding-left: 30px;
+	padding-top: 3px;
+
+	
 }
+
 
 .hover-card .list-items li::before {
 	font-family: "Font Awesome 5 Free";
 	content: "\f058";
+	font-size: 20px;
+     padding-top: 2px;
 	/* Unicode character for a bullet point (you can replace it with your preferred icon) */
-
-	margin-right: 8px;
+color: var(--green--);
+	
 	/* Adjust the spacing between the icon and the text */
 	position: absolute;
 	left: 0;
@@ -230,6 +251,7 @@ button {
 .team-section .right-side{
 background-color: var(--green--);
 position: relative;
+height: 100%;
 }
 
 .team-section .right-side .overlay {
@@ -243,3 +265,32 @@ position: relative;
 	opacity: 1; /* Adjust the opacity as needed */
   }
 
+
+  @media only screen and (max-width: 992px) {
+	.team-section .right-side{
+		
+		height: 400px;
+		}
+  }
+
+  @media only screen and (max-width: 662px) {
+	.team-section .right-side{
+		
+		height: 350px;
+		}
+  }
+
+  @media only screen and (max-width: 450px) {
+	.team-section .right-side .overlay {
+		
+		width: 80%;
+		
+	  }
+  }
+  @media only screen and (max-width: 350px) {
+	.team-section .right-side .overlay {
+		
+		width: 100%;
+		
+	  }
+  }
