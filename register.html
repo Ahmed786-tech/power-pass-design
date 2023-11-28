@@ -48,29 +48,51 @@
 	<main style="border: 1px solid red;" class="container-fluid g-0">
 		
 		<section class="container">
-			<div class="col-md-6">
-				<form class="form-main ps-4 pe-4 pe-lg-5 ps-lg-5 pt-4 pt-lg-5 pb-4 position-relative" id="contactForm">
-				   <div class="mb-3">
-					  <label class="form-label blue-text w-100">Anzahl der Wohnungen im Gebäude <i class="blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
-					  <input type="text" class="form-control" required name="name">
-				   </div>
-				   <div class="mb-3">
-					<label class="form-label blue-text w-100">Anzahl der Wohnungen im Gebäude <i class="blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
-					  <input type="text" class="form-control" required name="phone">
-				   </div>
-				   <div class="mb-3">
-					<label class="form-label blue-text w-100">Anzahl der Wohnungen im Gebäude <i class="blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
-					  <input type="text" class="form-control" required name="email">
-				   </div>
-				   <div class="mb-3">
-					  <label class="form-label text-main">Messages</label>
-					  <textarea class="form-control" required name="message" placeholder="Please Write a Message"></textarea>
-				   </div>
-					
-					<p class="text-green" id="formMessage"></p>
-				   <input type="submit" value="Send Message" class="text-light w-100 border-0 py-2 mt-3">
-				</form>
-			 </div>
+			<div class="row">
+				<div class="col-md-6">
+					<form class="form-main  pe-4 pe-lg-5  pt-4 pt-lg-5 pb-4 position-relative" id="contactForm">
+					   <div class="mb-4">
+						  <label class="form-label blue-text w-100">Anzahl der Wohnungen im Gebäude <i class="blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
+						  <input placeholder="Bitte eintragen" type="text" class="form-control" required name="name">
+					   </div>
+					   <div class="mb-4">
+						<label class="form-label blue-text w-100">Baujahr des Gebäudes <i class="blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
+						  <input placeholder="Bitte eintragen" type="text" class="form-control" required name="phone">
+					   </div>
+					   <div class="mb-4">
+						<label class="form-label blue-text w-100">Gesamte Wohnfläche <i class="blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
+						  <input placeholder="Bitte eintragen" type="text" class="form-control" required name="email">
+					   </div>
+					   <div><label class="form-label blue-text w-100">Beheizter Keller<i class="blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label></div>
+					   <div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+						<label class="form-check-label" for="inlineRadio1">Ja</label>
+					  </div>
+					  <div class="form-check form-check-inline mb-4">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+						<label class="form-check-label" for="inlineRadio2">Nein</label>
+					  </div>
+					  <div class="mb-4">
+						<label class="form-label blue-text w-100">Postleitzahl <i class="blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
+						  <input placeholder="Bitte eintragen" type="text" class="form-control" required name="email">
+					   </div>
+					   <button id="backButton" class="px-4 py-2 bg-yellowish-green"><i 
+						class="fa-solid fa-chevron-left extra-small-text"></i> Zuruck </button>
+						
+						<p class="text-green" id="formMessage"></p>
+					  
+					</form>
+				 </div>
+				 <div class="col-6 d-flex justify-content-end align-items-end pb-4 mb-3">
+					<div  class=" ">
+						<button id="morePage" class="px-4 py-2 bg-yellowish-green">Weiter <i 
+								class="fa-solid fa-chevron-right extra-small-text"></i></button>
+	
+	
+					</div>
+				 </div>
+			</div>
+			
 		</section>
 		
 	</main>
@@ -118,9 +140,39 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
 		crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 	<script>
-		
+		    $(document).ready(function () {
+        // Handle form submission
+        $("#morePage").on("click", function () {
+            // Validate form fields
+            if (!validateForm()) {
+                $("#formMessage").text("Please fill out all fields.");
+            } else {
+                // If the form is valid, you can submit it or take other actions
+                // Example: $("#contactForm").submit();
+                $("#formMessage").text(""); // Clear the error message
+            }
+        });
+
+        // Function to validate form fields
+        function validateForm() {
+			console.log("sdjshdjhsdjh")
+            var isValid = true;
+
+            // Check each form field for emptiness
+            $("#contactForm input").each(function () {
+                if ($(this).val() === "") {
+                    isValid = false;
+                    return false; // Exit the loop if any field is empty
+                }
+            });
+
+            return isValid;
+        }
+    });
+
 	</script>
 </body>
 
