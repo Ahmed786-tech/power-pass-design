@@ -11,12 +11,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-		
+
 	<link rel="stylesheet" href="./assets/style/style.css" />
 </head>
 
 <body>
-	<header class="container-fluid" style="border: 1px solid red;">
+	<header class="register-header container-fluid " >
 		<nav class="navbar navbar-expand-md p-0 py-3">
 			<div class="container d-flex justify-content-between p-0">
 				<a href="index.html" class="navbar-brand pe-3">
@@ -32,146 +32,179 @@
 				<div class="collapse navbar-collapse d-md-flex justify-content-end" id="navbarSupportedContent">
 					<ul class="navbar-nav  fw-bold p-0 m-0">
 						<li class="nav-item p-0 m-0 py-1 py-md-0 px-md-3 px-xl-3">
-							<a class="nav-link blue-text fw-light p-0 m-0 "
-								href="#">Details anzeigen</a>
+							<a class="nav-link blue-text fw-light p-0 m-0 " href="#">Details anzeigen</a>
 						</li>
 						<li class="nav-item p-0 m-0 py-1 py-md-0 px-md-3 px-xl-3">
 							<a class="nav-link p-0 m-0 blue-text fw-light" href="#">Rechner verlassen</a>
 						</li>
-						
+
 					</ul>
 
 				</div>
 			</div>
 		</nav>
 	</header>
-	<main style="border: 1px solid red;" class="container-fluid g-0">
+	<main  class="container-fluid g-0">
+		<div>
+		<div class="container linear-meter p-0 gx-0">
+			<div class="linear-box"></div>
+			<div class="linear-box"></div>
+			<div class="linear-box"></div>
+			<div class="linear-box"></div>
+			<div class="linear-box"></div>
+			<div class="linear-box"></div>
+			<div class="linear-box"></div>
+			<div class="linear-box"></div>
+			<div class="linear-box"></div>
+		</div>
+
+		<div class="container linear-meter-percentage p-0 gx-0">
 		
+			<div class="linear text-center fw-bold position-relative "><div class="arrow text-center"></div> <span class="mt-5">A+</span> </div>
+			<div class="linear ">A</div>
+			<div class="linear">B</div>
+			<div class="linear">C</div>
+			<div class="linear">D</div>
+			<div class="linear">E</div>
+			<div class="linear">F</div>
+			<div class="linear">G</div>
+			<div class="linear">H</div>
+		</div>
+
+	</div>
+
+		
+		
+
+		
+
 		<section class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<form class="form-main  pe-4 pe-lg-5  pt-4 pt-lg-5 pb-4 position-relative" id="contactForm">
-					   <div class="mb-4">
-						  <label class="form-label blue-text w-100">Anzahl der Wohnungen im Gebäude <i class="blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
-						  <input placeholder="Bitte eintragen" type="text" class="form-control" required name="name">
-					   </div>
-					   <div class="mb-4">
-						<label class="form-label blue-text w-100">Baujahr des Gebäudes <i class="blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
-						  <input placeholder="Bitte eintragen" type="text" class="form-control" required name="phone">
-					   </div>
-					   <div class="mb-4">
-						<label class="form-label blue-text w-100">Gesamte Wohnfläche <i class="blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
-						  <input placeholder="Bitte eintragen" type="text" class="form-control" required name="email">
-					   </div>
-					   <div><label class="form-label blue-text w-100">Beheizter Keller<i class="blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label></div>
-					   <div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-						<label class="form-check-label" for="inlineRadio1">Ja</label>
-					  </div>
-					  <div class="form-check form-check-inline mb-4">
-						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-						<label class="form-check-label" for="inlineRadio2">Nein</label>
-					  </div>
-					  <div class="mb-4">
-						<label class="form-label blue-text w-100">Postleitzahl <i class="blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
-						  <input placeholder="Bitte eintragen" type="text" class="form-control" required name="email">
-					   </div>
-					   <button id="backButton" class="px-4 py-2 bg-yellowish-green"><i 
-						class="fa-solid fa-chevron-left extra-small-text"></i> Zuruck </button>
-						
-						<p class="text-green" id="formMessage"></p>
-					  
-					</form>
-				 </div>
-				 <div class="col-6 d-flex justify-content-end align-items-end pb-4 mb-3">
-					<div  class=" ">
-						<button id="morePage" class="px-4 py-2 bg-yellowish-green">Weiter <i 
-								class="fa-solid fa-chevron-right extra-small-text"></i></button>
-	
-	
-					</div>
-				 </div>
-			</div>
 			
+			<div class="row pt-5 mt-3">
+				<p class="extra-small-text fw-light blue-text m-0">Verbrauchsausweis für Wohngebäude</p>
+			<h2 class="fs-2 yellowish-green fw-bold">Angaben zu Ihrer Wohnimmobilie</h2>
+				<div class="col-md-6">
+					
+					<form class="form-main pe-md-5  pt-4  pb-4" id="contactForm">
+						<div class="mb-4">
+							<label class="form-label blue-text w-100">Anzahl der Wohnungen im Gebäude <i
+									class="first-question blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i>
+							</label>
+							<input placeholder="Bitte eintragen" type="text" class="form-control" required name="name">
+						</div>
+						<div class="mb-4">
+							<label class="form-label blue-text w-100">Baujahr des Gebäudes <i
+									class="first-question blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
+							<input placeholder="Bitte eintragen" type="text" class="form-control" required name="phone">
+						</div>
+						<div class="mb-4">
+							<label class="form-label blue-text w-100">Gesamte Wohnfläche <i
+									class="first-question blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
+							<input placeholder="Bitte eintragen" type="text" class="form-control" required name="email">
+						</div>
+						<div><label class="form-label blue-text w-100">Beheizter Keller<i
+									class="first-question blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+								value="option1">
+							<label class="form-check-label blue-text" for="inlineRadio1">Ja</label>
+						</div>
+						<div class="form-check form-check-inline mb-4">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+								value="option2">
+							<label class="form-check-label blue-text" for="inlineRadio2">Nein</label>
+						</div>
+						<div class="mb-4">
+							<label class="form-label blue-text w-100">Postleitzahl <i
+									class="first-question blue-text fa-solid fa-circle-question float-end m-0 pt-1"></i></label>
+							<input placeholder="Bitte eintragen" type="text" class="form-control" required name="email">
+						</div>
+						
+						<button id="backButton" class="px-4 py-2 "><i
+								class="fa-solid fa-chevron-left extra-small-text"></i> Zuruck </button>
+
+								
+
+						<p class=" fw-bold error-message mt-3" id="formMessage"></p>
+
+					</form>
+				</div>
+				<div class="col-md-6 d-flex justify-content-end align-items-end pb-4 mb-3">
+					<div class=" ">
+						<button id="morePage" class="px-4 py-2 bg-yellowish-green">Weiter <i
+								class="fa-solid fa-chevron-right extra-small-text"></i></button>
+
+
+					</div>
+				</div>
+			</div>
+
 		</section>
-		
+
 	</main>
-	<footer class="footer py-5">
+	<footer  class="footer register-footer py-5">
 		<div class="container py-2">
-<div class="row">
-<div class="col-6">
-	<a href="index.html" class="">
-		<img src="assets/images/logo.svg" width="240" alt="ai web builder" />
-	</a>
-</div>
-<div class="col-6">
-	<div class="d-flex justify-content-end">
-		<div class="">
-    <img class="pe-2" width="80" src="assets/images/paypal.png" alt="">
-	<img class="pe-2" width="50" src="assets/images/visa.png" alt="">
-	<img class="pe-2" width="40" src="assets/images/master.png" alt="">
-	<img class="pe-2" width="40" src="assets/images/sepa.png" alt="">
-</div>
-</div>
-</div>
-</div>
+			
 
-<div class="row pt-5 mt-5">
-	<div class="col-6">
-		<p class="blue-text m-0">© 2023 POWER<strong>PASS</strong>, alle Rechte vorbehalten </p>
-	</div>
-	<div class="col-6">
-		<div class="d-flex justify-content-end">
-			<div class="">
-				<a class="blue-text" href="">Impressum</a>
-				<span class="blue-text">|</span>
-				<a class="blue-text" href="">AGB</a>
-				<span class="blue-text">|</span>
-				<a class="blue-text" href="">Datenschutz</a>
+			<div class="row ">
+				<div class="col-6">
+					<p class="blue-text m-0">© 2023 POWER<strong>PASS</strong>, alle Rechte vorbehalten </p>
+				</div>
+				<div class="col-6">
+					<div class="d-flex justify-content-end">
+						<div class="">
+							<a class="blue-text" href="">Impressum</a>
+							<span class="blue-text">|</span>
+							<a class="blue-text" href="">AGB</a>
+							<span class="blue-text">|</span>
+							<a class="blue-text" href="">Datenschutz</a>
 
-		
-	</div>
-	</div>
-	</div>
-	</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
 		crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 	<script>
-		    $(document).ready(function () {
-        // Handle form submission
-        $("#morePage").on("click", function () {
-            // Validate form fields
-            if (!validateForm()) {
-                $("#formMessage").text("Please fill out all fields.");
-            } else {
-                // If the form is valid, you can submit it or take other actions
-                // Example: $("#contactForm").submit();
-                $("#formMessage").text(""); // Clear the error message
-            }
-        });
+		$(document).ready(function () {
+			// Handle form submission
+			$("#morePage").on("click", function () {
+				// Validate form fields
+				if (!validateForm()) {
+					$("#formMessage").text("Bitte fullen Sie fehlende Angaben aus, bevor Sie fortfahren.");
+					$("#backButton").css("display", "none");
+					$("#backButton").css("display", "block");
+				} else {
+					// If the form is valid, you can submit it or take other actions
+					// Example: $("#contactForm").submit();
+					$("#formMessage").text(""); // Clear the error message
+				}
+			});
 
-        // Function to validate form fields
-        function validateForm() {
-			console.log("sdjshdjhsdjh")
-            var isValid = true;
+			// Function to validate form fields
+			function validateForm() {
 
-            // Check each form field for emptiness
-            $("#contactForm input").each(function () {
-                if ($(this).val() === "") {
-                    isValid = false;
-                    return false; // Exit the loop if any field is empty
-                }
-            });
+				var isValid = true;
 
-            return isValid;
-        }
-    });
+				// Check each form field for emptiness
+				$("#contactForm input").each(function () {
+					if ($(this).val() === "") {
+						isValid = false;
+						return false; // Exit the loop if any field is empty
+					}
+				});
+
+				return isValid;
+			}
+		});
 
 	</script>
 </body>

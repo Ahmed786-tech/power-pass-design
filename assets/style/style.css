@@ -59,6 +59,9 @@ font-size: 14px;
 .bg-yellowish-green {
 	background-color: var(--green--);
 }
+.error-message{
+	color: red;
+}
 
 .nav-logo {
 	color: var(--primary--);
@@ -265,11 +268,95 @@ height: 100%;
 	opacity: 1; /* Adjust the opacity as needed */
   }
 
+ 
+
+.first-question::after {
+	content: "";
+}
+
+.first-question:hover::after {
+	position: absolute;
+    content: "Hinweistext zur Anzahl der Wohneinheiten, wenn man auf den Kreis mit dem Fragezeichen klickt";
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-top: 2px;
+	font-family: var(--dm-sans--);
+}
+
+.first-question:hover ~ .form-help-text {
+    display: block;
+}
+
+#backButton{
+	display: none;
+	border: 1px solid var(--green--);
+	background-color: white;
+	color: var(--green--);
+}
+
+.register-header{
+border-bottom: 1px solid yellowgreen;
+}
+
+.register-footer{
+border-top: 1px solid yellowgreen;
+}
+ 
+.linear-meter {
+	display: grid;
+	grid-template-columns: repeat(9, 11.12%);
+	background-image: linear-gradient(to right, green, yellow , red);
+}
+
+.linear-meter-percentage {
+	display: grid;
+	grid-template-columns: repeat(9, 11%);
+	
+}
+
+.linear-box {
+	height: 20px;
+	border-right: 1px solid white;
+}
+
+.linear {
+	text-align: center;
+	line-height: 30px;
+	
+}
+
+
+
+.arrow {
+	position: absolute;
+	top: -35%;
+	left: 40%;
+	width: 5px;
+	height: 5px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 15px solid black; /* You can change the color here */
+}
+
+
+
 
   @media only screen and (max-width: 992px) {
 	.team-section .right-side{
 		
 		height: 400px;
+		}
+  }
+
+  @media only screen and (max-width: 720px) {
+	.team-section .right-side{
+		
+		height: 350px;
+		}
+
+		.first-question:hover::after {
+			position: static;
 		}
   }
 
